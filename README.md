@@ -10,19 +10,3 @@ Il fait donc appel à un white-hat hacker afin de récupéré les fichiers qui p
 
 ## Accueil / Secrétaria
 Cette salle contient un bureau et un ordinateur pour le secrétaria. Cette ordinateur est protégé par un mot de passe, le dit mot de passe est visible su run post-it coller sur l'écran.
-
-## Salle machines
-
-## Bureau
-
-## Salle administrateur
-
-## Salle serveur
-
-## Salle suplémentaire
-
-### Salle du concièrge
-
-#### Guide du Hacker
-
-### Toilettes
