@@ -5,5 +5,3 @@ Un ancien employé d'une célèbre marque d'automobile allmande veut se vengez d
 que l'entreprise avait falsifié les données de pollution de leur véhicule.
 
 Il fait donc appel à un white-hat hacker afin de récupéré les fichiers qui prouveraient l'implication de l'entreprise dans cette affaire.
-
-## Fonctionement par salle
