@@ -9,3 +9,5 @@ Il fait donc appel à une white-hat hacker afin de récupéré les fichiers qui 
 ## Fonctionement par salle
 
 ## Salle serveur
+Dans cette salle le but est d'intéragire avec le serveur au moyen d'une clé USB contenant un script PowerShell qui récupèrera des documents sensibles et secrets. 
+L'utilisateur devra sélectionner les commandes qui lui paraissent juste (les commandes auront des noms explicites).
