@@ -15,15 +15,15 @@ public class SleepyGuardian : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return)) // Si la touche Enter est enfoncée
+        if (playermovement.isRunning)) // Si la touche Enter est enfoncée
         {
             renderer.material.color = pressedColor; // Changer la couleur à la couleur "pressedColor"
-            playermovement.isRunning = true;
+            
         }
         else if (Input.GetKeyUp(KeyCode.Return)) // Si la touche Enter est relâchée
         {
             renderer.material.color = releasedColor; // Changer la couleur à la couleur "releasedColor"
-            playermovement.isRunning = false;
+            
         }
     }
 }
