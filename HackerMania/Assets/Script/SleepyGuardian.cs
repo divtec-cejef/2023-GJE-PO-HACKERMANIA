@@ -2,28 +2,22 @@ using UnityEngine;
 
 public class SleepyGuardian : MonoBehaviour
 {
-    public Color pressedColor; // La couleur à appliquer lorsque la touche est enfoncée
-    public Color releasedColor; // La couleur à appliquer lorsque la touche est relâchée
-    public PlayerMovement playermovement;
+    public PlayerMovement playerMovement;
 
-    private new Renderer renderer;
+    private SpriteRenderer rend;
 
     void Start()
     {
-        renderer = GetComponent<Renderer>();
+        rend = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
-        if (playermovement.isRunning)) // Si la touche Enter est enfoncée
+        if (playerMovement.isRunning)
         {
-            renderer.material.color = pressedColor; // Changer la couleur à la couleur "pressedColor"
-            
-        }
-        else if (Input.GetKeyUp(KeyCode.Return)) // Si la touche Enter est relâchée
-        {
-            renderer.material.color = releasedColor; // Changer la couleur à la couleur "releasedColor"
-            
+            rend.color = Color.green;
+        } else {
+            rend.color = Color.red;
         }
     }
 }
