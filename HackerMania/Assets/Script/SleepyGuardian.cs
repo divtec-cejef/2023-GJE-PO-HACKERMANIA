@@ -15,9 +15,9 @@ public class SleepyGuardian : MonoBehaviour
     {
         if (playerMovement.isRunning)
         {
-            rend.color = Color.green;
-        } else {
             rend.color = Color.red;
+        } else {
+            rend.color = Color.green;
         }
     }
 }
