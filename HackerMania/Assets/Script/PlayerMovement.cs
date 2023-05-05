@@ -11,6 +11,21 @@ public class PlayerMovement : MonoBehaviour
     private GameObject pushableObject;
     private bool isPushing = false;
 
+
+        public static PlayerMovement instance;
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogWarning("Il y a plus d'une instance de PlayerMovement dans la scène");
+            return;
+        }
+
+        instance = this;
+    }
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
