@@ -1,5 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class GameOver : MonoBehaviour
@@ -16,8 +16,7 @@ private void Awake(){
 }
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start(){
         
     }
 
@@ -33,14 +32,14 @@ private void Awake(){
 		if (Catch == True){
             PlayerMovement.instance.enable = true;
             PlayerMovement.instance.animator.SetTrigger("Die");
+            SceneManagement.LoadScene("GameOver");
 			Debug.Log("GameOver");
 			return;
 		}
 	}
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update(){
         
     }
 }

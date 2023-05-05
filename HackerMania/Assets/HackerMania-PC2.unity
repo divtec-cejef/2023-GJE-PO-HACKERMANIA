@@ -726,7 +726,7 @@ GameObject:
   - component: {fileID: 373620095}
   - component: {fileID: 373620094}
   m_Layer: 5
-  m_Name: Retry
+  m_Name: BT_Retry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1188,7 +1188,7 @@ GameObject:
   - component: {fileID: 550073159}
   - component: {fileID: 550073158}
   m_Layer: 5
-  m_Name: Menu
+  m_Name: BT_Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1258,7 +1258,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 550073159}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 102900000, guid: df4425881ae420e4b985c50127d37975, type: 3}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &550073159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1911,7 +1923,7 @@ GameObject:
   - component: {fileID: 1482685495}
   - component: {fileID: 1482685494}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TXT_GameOver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2638,7 +2650,7 @@ GameObject:
   - component: {fileID: 1902638665}
   - component: {fileID: 1902638664}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TXT_Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2777,7 +2789,7 @@ GameObject:
   m_Layer: 5
   m_Name: Game OverScreen
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2898,7 +2910,7 @@ GameObject:
   - component: {fileID: 2127611166}
   - component: {fileID: 2127611165}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TXT_Retry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
