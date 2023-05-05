@@ -868,7 +868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 1081902175}
-  Texte: Il y a plein de charte des derniers model de Lamborghini
+  Texte: "Une biblioth\xE8que remplit de vieux livres d'automobile"
   dialogueText: {fileID: 288197942}
   playerMovement: {fileID: 737338377}
   maxDistance: 5
@@ -1605,7 +1605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 1081902175}
-  Texte: "Une biblioth\xE8que compl\xE8te sur des magazines Ferarai"
+  Texte: "Une biblioth\xE8que remplit de mod\xE8les miniatures"
   dialogueText: {fileID: 288197942}
   playerMovement: {fileID: 737338377}
   maxDistance: 5
