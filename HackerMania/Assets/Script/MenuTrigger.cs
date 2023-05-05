@@ -5,10 +5,11 @@ using TMPro;
 public class MenuTrigger : MonoBehaviour
 {
     public float triggerRadius = 2f; // rayon de détection du joueur
-    public string Texte = "";
+    public string dialogueText = ""; // Texte de la boîte de dialogue
     public GameObject menu; // référence à l'objet du menu
     public Transform player; // référence au transform du joueur
     public TMP_Text interactText; // Référence au texte.
+    public TMP_Text dialogueBoxText; // Référence au texte de la boîte de dialogue.
 
     private bool isMenuOpen = false; // indique si le menu est actuellement ouvert
 
@@ -34,11 +35,13 @@ public class MenuTrigger : MonoBehaviour
             // Si le menu est fermé, l'ouvrir
             if (!isMenuOpen)
             {
+                interactText.text = "Press A to interact"; // Effacer le texte d'interaction
+                dialogueBoxText.text = dialogueText; // Mettre à jour le texte de la boîte de dialogue
                 menu.SetActive(true);
-            
                 Time.timeScale = 0f; // arrêter le temps de la scène pour que le jeu soit en pause
                 isMenuOpen = true;
             }
+
             // Sinon, le fermer
             else
             {
