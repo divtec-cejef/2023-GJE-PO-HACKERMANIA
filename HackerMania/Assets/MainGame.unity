@@ -1755,18 +1755,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.036722302, y: -0.3096981}
+  m_Offset: {x: -0.11159706, y: -0.2038849}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8.6, y: 4.09}
+    oldSize: {x: 3.29, y: 1.87}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.7213993, y: 2.3204856}
+  m_Size: {x: 2.622034, y: 0.7544496}
   m_EdgeRadius: 0
 --- !u!212 &796845706
 SpriteRenderer:
@@ -1809,7 +1809,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 547faee50f173c440bb639d8485661de, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e2d8d8fd12bafa943a3d296bbc24916d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1828,8 +1828,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796845703}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 13.95, z: 0}
-  m_LocalScale: {x: 1.986431, y: 1.8557951, z: 1}
+  m_LocalPosition: {x: 1.7157, y: 12.5894, z: 0}
+  m_LocalScale: {x: 4.370278, y: 4.2055864, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2210,7 +2210,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 880798645}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.23, y: -9.328, z: 0}
+  m_LocalPosition: {x: 9.66, y: -9.33, z: 0}
   m_LocalScale: {x: 2.2406034, y: 1.4902575, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2229,10 +2229,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7abf565c7b1d5b54688898a71a3be11a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 737338379}
-  targetTransform: {fileID: 737338379}
-  proximityDistance: 5
+  maxDistance: 4
   sceneName: LoginScene
+  playerMovement: {fileID: 737338377}
 --- !u!1 &901585985
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,16 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class SceneChangementInteraction : MonoBehaviour
 {
-    public Transform playerTransform;
-    public Transform targetTransform;
-    public float proximityDistance = 2.0f;
+    public float maxDistance = 2.0f;
     public string sceneName;
+    public PlayerMovement playerMovement;
 
     private void Update()
     {
-        float distance = Vector3.Distance(playerTransform.position, targetTransform.position);
-
-        if (distance <= proximityDistance && Input.GetKeyDown(KeyCode.JoystickButton0))
+        if (Vector2.Distance(transform.position, playerMovement.transform.position) <= maxDistance 
+            && Input.GetKeyDown(KeyCode.JoystickButton0))
         {
             SceneManager.LoadScene(sceneName);
         }
