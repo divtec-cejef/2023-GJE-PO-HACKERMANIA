@@ -1385,7 +1385,7 @@ MonoBehaviour:
   Texte: "Une imprimante derni\xE8re g\xE9n\xE9ration"
   dialogueText: {fileID: 288197942}
   playerMovement: {fileID: 737338377}
-  maxDistance: 5
+  maxDistance: 3
 --- !u!61 &467167515
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3422,7 +3422,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9452dd6aea768c74788c0fb4460f18a7, type: 3}
   m_Color: {r: 0.20783128, g: 0.8301887, b: 0.06657174, a: 1}
   m_FlipX: 0
