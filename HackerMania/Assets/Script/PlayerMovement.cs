@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -10,20 +11,6 @@ public class PlayerMovement : MonoBehaviour
 
     private GameObject pushableObject;
     private bool isPushing = false;
-
-
-        public static PlayerMovement instance;
-
-    private void Awake()
-    {
-        if (instance != null)
-        {
-            Debug.LogWarning("Il y a plus d'une instance de PlayerMovement dans la scène");
-            return;
-        }
-
-        instance = this;
-    }
 
 
     void Start()
