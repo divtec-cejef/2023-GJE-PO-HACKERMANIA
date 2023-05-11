@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:HackerMania/Assets/Import/Spamton.png.meta
 guid: eba73cb5a8978dc41a7c2521ed07adec
+=======
+guid: 07de32079c1496447b36c36780ce0b15
+>>>>>>> Fuction---interface-bureau:HackerMania/Assets/Spamton.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

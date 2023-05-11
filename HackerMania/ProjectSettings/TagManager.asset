@@ -7,6 +7,8 @@ TagManager:
   - DialogueTrigger
   - Caisse
   - Circle
+  - Button
+  - Panel
   layers:
   - Default
   - TransparentFX
