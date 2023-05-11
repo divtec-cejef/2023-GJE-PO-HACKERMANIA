@@ -11,18 +11,19 @@ public class SceneChangementInteraction : MonoBehaviour
 
     public Vector3 playerPosition;
 
-    private void Update()
+   private void Update()
+{
+    if (Vector2.Distance(transform.position, playerMovement.transform.position) <= maxDistance 
+        && Input.GetKeyDown(KeyCode.JoystickButton0))
     {
-        if (Vector2.Distance(transform.position, playerMovement.transform.position) <= maxDistance 
-            && Input.GetKeyDown(KeyCode.JoystickButton0))
-        {
-            // Enregistre la position actuelle du joueur
-            playerPosition = playerMovement.transform.position;
+        // Enregistre la position actuelle du joueur
+        playerPosition = playerMovement.transform.position;
 
-            // Charge la nouvelle scène
-            SceneManager.LoadScene(sceneName);
-        }
+        // Charge la nouvelle scène
+        SceneManager.LoadScene(sceneName);
     }
+
+}
 
     public Vector3 GetPlayerPosition()
     {
