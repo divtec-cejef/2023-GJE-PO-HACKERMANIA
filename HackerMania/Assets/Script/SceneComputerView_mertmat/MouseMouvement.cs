@@ -4,7 +4,7 @@ public class MouseMouvement : MonoBehaviour
 {
     public float normalSpeed = 5f;
     public float boostSpeed = 10f;
-    public float maxPos;
+    public float minPos;
     public float minPos;
 
     private Rigidbody2D rb;
@@ -20,6 +20,7 @@ public class MouseMouvement : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
         
+        Vector3 newPos = new Vector3 (horizontal, vertical, 0) 
 
         // Vérifier si le joystick gauche est utilisé pour déplacer le joueur
         if (Mathf.Abs(horizontal) > 0.1f || Mathf.Abs(vertical) > 0.1f)

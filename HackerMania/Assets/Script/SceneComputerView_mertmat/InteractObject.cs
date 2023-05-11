@@ -8,6 +8,7 @@ public class InteractObject : MonoBehaviour
 
     void OnTriggerEnter(Collider other) {
             if (other.CompareTag("Player")) {
+                Debug.Log("dans le bt");
                 triggerActive = true;
             }
         }
