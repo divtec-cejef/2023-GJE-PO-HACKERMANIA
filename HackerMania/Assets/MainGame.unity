@@ -123,8 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< Updated upstream
-=======
 --- !u!1 &2261692
 GameObject:
   m_ObjectHideFlags: 0
@@ -730,7 +728,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 258822679}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.355, y: -0.377, z: 0}
+  m_LocalPosition: {x: 0.36, y: -0.37, z: 0}
   m_LocalScale: {x: 31.228178, y: 41.42325, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -976,8 +974,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 310835024}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.3301, y: -8.9187, z: 0}
-  m_LocalScale: {x: 11.298648, y: 2.3123672, z: 1}
+  m_LocalPosition: {x: 10.3301, y: -9.594, z: 0}
+  m_LocalScale: {x: 11.298648, y: 0.9618432, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2452,7 +2450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7abf565c7b1d5b54688898a71a3be11a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistance: 3
+  maxDistance: 4
   sceneName: LoginScene
   playerMovement: {fileID: 737338377}
   playerPosition: {x: 0, y: 0, z: 0}
@@ -3111,7 +3109,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
->>>>>>> Stashed changes
 --- !u!1 &1152895794
 GameObject:
   m_ObjectHideFlags: 0
@@ -3123,6 +3120,8 @@ GameObject:
   - component: {fileID: 1152895797}
   - component: {fileID: 1152895796}
   - component: {fileID: 1152895795}
+  - component: {fileID: 1152895798}
+  - component: {fileID: 1152895799}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3148,7 +3147,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -3165,7 +3164,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 9.403856
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3196,8 +3195,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
-=======
 --- !u!114 &1152895798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4935,11 +4932,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2085596115}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.21, y: -12.5824, z: 0}
-  m_LocalScale: {x: 0.9513894, y: 9.638623, z: 1}
+  m_LocalPosition: {x: 4.21, y: -13.2575, z: 0}
+  m_LocalScale: {x: 0.9513894, y: 8.2880945, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes

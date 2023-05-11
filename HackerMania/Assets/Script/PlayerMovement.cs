@@ -1,14 +1,17 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
     public float normalSpeed = 5f;
     public float boostSpeed = 10f;
+    public bool isRunning = false;
 
     private Rigidbody2D rb;
 
     private GameObject pushableObject;
     private bool isPushing = false;
+
 
     void Start()
     {
@@ -27,10 +30,12 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKey(KeyCode.JoystickButton2))
             {
                 rb.MovePosition(rb.position + new Vector2(horizontal, vertical) * boostSpeed * Time.fixedDeltaTime);
+                isRunning = true;
             }
             else
             {
                 rb.MovePosition(rb.position + new Vector2(horizontal, vertical) * normalSpeed * Time.fixedDeltaTime);
+                isRunning = false;
             }
         }
 
