@@ -20,12 +20,12 @@ public class DialogueTrigger : MonoBehaviour
 
     void Update()
     {
-        if (isDialogueActive && Input.GetKeyDown(KeyCode.JoystickButton0))
+        if (isDialogueActive && Input.GetKeyDown(KeyCode.Return))
         {
             EndDialogue();
         }
         else if (!isDialogueActive && Vector2.Distance(transform.position, playerMovement.transform.position) <= maxDistance 
-            && Input.GetKeyDown(KeyCode.JoystickButton0))
+            && Input.GetKeyDown(KeyCode.Return))
         {
             StartDialogue();
         }

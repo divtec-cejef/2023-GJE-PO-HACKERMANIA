@@ -1,12 +1,14 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PasswordController : MonoBehaviour
 {
     public TMP_InputField passwordInput;
     public bool isPasswordCorrect = false;
     public string passwordString = "";
+    public string sceneName;
 
     private void Start()
     {
@@ -17,8 +19,8 @@ public class PasswordController : MonoBehaviour
     {
         if (password == passwordString)
         {
-            isPasswordCorrect = true;
             Debug.Log("Juste");
+            isPasswordCorrect = true;
         }
         else
         {
