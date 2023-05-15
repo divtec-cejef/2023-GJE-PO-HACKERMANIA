@@ -14,7 +14,7 @@ public class SceneChangementInteraction : MonoBehaviour
    private void Update()
 {
     if (Vector2.Distance(transform.position, playerMovement.transform.position) <= maxDistance 
-        && Input.GetKeyDown(KeyCode.JoystickButton0))
+        && Input.GetKeyDown(KeyCode.Return))
     {
         // Enregistre la position actuelle du joueur
         playerPosition = playerMovement.transform.position;
