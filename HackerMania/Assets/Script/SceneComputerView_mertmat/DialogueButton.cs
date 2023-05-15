@@ -1,44 +1,40 @@
+/*
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DialogueButton : MonoBehaviour
 {
-    public GameObject dialogueBox;
-    public string Texte = "";
-    public TMP_Text dialogueText;
+public GameObject CanvasTextBox;
+public string Texte = "";
+public TMP_Text DialogueText;
 
-    private bool isDialogueActive = false;
+private bool isDialogueActive = false;
 
-    // Start is called before the first frame update
-    void Start()
+// Start is called before the first frame update
+void Start()
+{
+CanvasTextBox.SetActive(false); 
+}
+
+public void OnClickButton ()
+{
+    if (!isDialogueActive)
     {
-        dialogueBox.SetActive(false); 
-    }
-
-     private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            if (!isDialogueActive)
-            {
-                isDialogueActive = true;
-                dialogueBox.SetActive(true);
-                dialogueText.text = Texte;
-                Debug.Log("Dialogue lancé");
-            }
-        }
-    }
-
-    public void OpenTextBox () {
-        if (!isDialogueActive) {
-                 
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        isDialogueActive = true;
+        CanvasTextBox.SetActive(true);
+        DialogueText.text = Texte;
+        Debug.Log("Dialogue lancé");
     }
 }
+private void waitDialogue (float waitTime) {
+    yield return new WaitForSeconde()
+}
+
+// Update is called once per frame
+void Update()
+{
+        
+}
+}
+*/
