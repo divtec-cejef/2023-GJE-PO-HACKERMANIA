@@ -39,7 +39,7 @@ public class SoundBar : MonoBehaviour
 
     void OnEnable()
     {
-        InvokeRepeating("DecreaseHealth", 1f, 1f);
+        InvokeRepeating("DecreaseHealth", 0.35f, 1f);
     }
 
     void OnDisable()

@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
         if (Mathf.Abs(horizontal) > 0.1f || Mathf.Abs(vertical) > 0.1f)
         {
             // Vérifier si le bouton A est enfoncé pour augmenter la vitesse
-            if (Input.GetKey(KeyCode.JoystickButton2))
+            if (Input.GetKey(KeyCode.LeftShift))
             {
                 rb.MovePosition(rb.position + new Vector2(horizontal, vertical) * boostSpeed * Time.fixedDeltaTime);
                 isRunning = true;
