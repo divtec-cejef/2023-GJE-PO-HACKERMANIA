@@ -38,6 +38,10 @@ public class PlayerMovement : MonoBehaviour
                 isRunning = false;
             }
         }
+        else
+        {
+            isRunning = false;
+        }
 
         if (isPushing && pushableObject != null)
         {

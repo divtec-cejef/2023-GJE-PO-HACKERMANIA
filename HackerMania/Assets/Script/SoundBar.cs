@@ -6,7 +6,6 @@ public class SoundBar : MonoBehaviour
     public float maxHealth = 1.0f;
     public float health = 1.0f;
     public float healthDecreaseRate = 0.1f;
-    public float DecreaseRatio = 0.1f;
 
     public Image fillImage;
 
@@ -40,7 +39,7 @@ public class SoundBar : MonoBehaviour
 
     void OnEnable()
     {
-        InvokeRepeating("DecreaseHealth", 1f, DecreaseRatio);
+        InvokeRepeating("DecreaseHealth", 1f, 0.35f);
     }
 
     void OnDisable()
