@@ -5,7 +5,7 @@ using TMPro;
 public class DialogueTrigger : MonoBehaviour
 {
     public GameObject dialogueBox;
-    public string Texte = "";
+    public string texte = "";
     public TMP_Text dialogueText;
     public PlayerMovement playerMovement; // Référence au script de mouvement du joueur
 
@@ -20,12 +20,12 @@ public class DialogueTrigger : MonoBehaviour
 
     void Update()
     {
-        if (isDialogueActive && Input.GetKeyDown(KeyCode.JoystickButton0))
+        if (isDialogueActive && (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.E)))
         {
             EndDialogue();
         }
         else if (!isDialogueActive && Vector2.Distance(transform.position, playerMovement.transform.position) <= maxDistance 
-            && Input.GetKeyDown(KeyCode.JoystickButton0))
+            && (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.E)))
         {
             StartDialogue();
         }
@@ -35,7 +35,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         isDialogueActive = true;
         dialogueBox.SetActive(true);
-        dialogueText.text = Texte;
+        dialogueText.text = texte;
         playerMovement.enabled = false; // Désactiver le script de mouvement du joueur
         Debug.Log("Dialogue lancé");
     }
@@ -43,7 +43,7 @@ public class DialogueTrigger : MonoBehaviour
     private void EndDialogue()
     {
         isDialogueActive = false;
-        dialogueBox.SetActive(false); // désactive la boîte de dialogue lorsque la touche "Enter" est enfoncée
+        dialogueBox.SetActive(false); // désactive la boîte de dialogue lorsque la touche "Enter" ou "E" est enfoncée
         playerMovement.enabled = true; // Réactiver le script de mouvement du joueur
         Debug.Log("Dialogue terminé");
     }
