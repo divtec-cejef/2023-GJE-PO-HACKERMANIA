@@ -1,9 +1,8 @@
-
-using System.Collections;
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueButton : MonoBehaviour
+public class TextBoxManage : MonoBehaviour
 {
 public GameObject CanvasTextBox;
 public string Texte = "";
@@ -15,6 +14,7 @@ private bool isDialogueActive = false;
 void Start()
 {
 CanvasTextBox.SetActive(false); 
+  
 }
 
 public void OnClickButton ()
@@ -26,9 +26,6 @@ public void OnClickButton ()
         DialogueText.text = Texte;
         Debug.Log("Dialogue lancé");
     }
-}
-private void waitDialogue (float waitTime) {
-    yield return new WaitForSeconde()
 }
 
 // Update is called once per frame
@@ -43,5 +40,4 @@ void Update()
         }
     }
 }
-
-
+}
