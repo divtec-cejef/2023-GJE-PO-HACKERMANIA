@@ -9,7 +9,7 @@ public class CusrorControlle : MonoBehaviour
   public Texture2D cursorTexture;
 
   void OnMouseEnter () {
-	 Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
+	 Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.ForceSoftware);
   }
 
   void OnMouseExit() {

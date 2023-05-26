@@ -5,22 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class ConnectionButtonScript : MonoBehaviour
 {
-    private PasswordController passwordcontroller;
+    private PasswordController passwordController;
     public string sceneName;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        passwordController = FindObjectOfType<PasswordController>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnClickButton()
     {
-        if(passwordcontroller.isPasswordCorrect == true)
+        if (passwordController != null && passwordController.isPasswordCorrect)
         {
-            // Charge la nouvelle scène
-        SceneManager.LoadScene(sceneName);
+            SceneManager.LoadScene(sceneName);
         }
     }
 }
