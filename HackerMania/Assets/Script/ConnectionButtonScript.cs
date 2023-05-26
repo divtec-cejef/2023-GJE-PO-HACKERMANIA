@@ -7,10 +7,12 @@ public class ConnectionButtonScript : MonoBehaviour
 {
     private PasswordController passwordController;
     public string sceneName;
+    public GameObject FauxMDPTexte;
 
     private void Start()
     {
         passwordController = FindObjectOfType<PasswordController>();
+        FauxMDPTexte.SetActive(false);
     }
 
     public void OnClickButton()
@@ -18,6 +20,8 @@ public class ConnectionButtonScript : MonoBehaviour
         if (passwordController != null && passwordController.isPasswordCorrect)
         {
             SceneManager.LoadScene(sceneName);
+        } else {
+            FauxMDPTexte.SetActive(true);
         }
     }
 }
