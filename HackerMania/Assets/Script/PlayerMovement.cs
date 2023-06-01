@@ -52,16 +52,6 @@ public class PlayerMovement : MonoBehaviour
             // Pousser l'objet en fonction de la direction et de la vitesse du joueur
             pushableObject.GetComponent<Rigidbody2D>().velocity = pushDirection * normalSpeed;
         }
-
-        if (horizontal > 0) 
-        { 
-            transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z); 
-        } 
-        else if (horizontal < 0) 
-        {
-            transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z); 
-        }
-
     }
 
     void OnCollisionEnter2D(Collision2D collision)
