@@ -7,11 +7,13 @@ public class PlayerMovement : MonoBehaviour
     public float boostSpeed = 10f;
     public bool isRunning = false;
 
+    public Animator animator;
+    public DirectionalAnimations animations;
+
     private Rigidbody2D rb;
 
     private GameObject pushableObject;
     private bool isPushing = false;
-
 
     void Start()
     {
@@ -43,6 +45,32 @@ public class PlayerMovement : MonoBehaviour
             isRunning = false;
         }
 
+        // Mettre à jour l'animation en fonction de la direction de déplacement
+        if (vertical < 0 && Mathf.Abs(horizontal) < 0.1f)
+        {
+            animator.Play(animations.DownAnimation);
+        }
+        else if (vertical > 0 && Mathf.Abs(horizontal) < 0.1f)
+        {
+            animator.Play(animations.UpAnimation);
+        }
+        else if (Mathf.Abs(horizontal) > 0.1f)
+        {
+            if (horizontal < 0)
+            {
+                animator.Play(animations.LeftAnimation);
+            }
+            else
+            {
+                animator.Play(animations.RightAnimation);
+            }
+        }
+        else
+        {
+            // Si le joueur ne bouge pas, jouer l'animation "idle"
+            animator.Play(animations.IdleAnimation);
+        }
+
         if (isPushing && pushableObject != null)
         {
             // Calculer la direction dans laquelle pousser l'objet
@@ -53,23 +81,14 @@ public class PlayerMovement : MonoBehaviour
             pushableObject.GetComponent<Rigidbody2D>().velocity = pushDirection * normalSpeed;
         }
     }
+}
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("collision détectée");
-    }
-
-    void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Caisse") && Input.GetButton("Jump"))
-        {
-            isPushing = true;
-            pushableObject = collision.gameObject;
-        }
-        else
-        {
-            isPushing = false;
-            pushableObject = null;
-        }
-    }
+[System.Serializable]
+public class DirectionalAnimations
+{
+    public string UpAnimation;
+    public string DownAnimation;
+    public string LeftAnimation;
+    public string RightAnimation;
+    public string IdleAnimation;
 }

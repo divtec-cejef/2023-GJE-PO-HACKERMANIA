@@ -10,20 +10,30 @@ public class SceneChangementInteraction : MonoBehaviour
     public PlayerMovement playerMovement;
 
     public Vector3 playerPosition;
+    private static bool isFirstInteraction = true;
 
-   private void Update()
-{
-    if (Vector2.Distance(transform.position, playerMovement.transform.position) <= maxDistance 
-        && Input.GetKeyDown(KeyCode.JoystickButton0))
+    private void Update()
     {
-        // Enregistre la position actuelle du joueur
-        playerPosition = playerMovement.transform.position;
+        if (Vector2.Distance(transform.position, playerMovement.transform.position) <= maxDistance 
+            && Input.GetKeyDown(KeyCode.JoystickButton0))
+        {
+            // Enregistre la position actuelle du joueur
+            playerPosition = playerMovement.transform.position;
 
-        // Charge la nouvelle scène
-        SceneManager.LoadScene(sceneName);
+            // Vérifie si c'est la première interaction
+            if (isFirstInteraction)
+            {
+                // Ajoute 1 à ObjectifIndex
+                VariablesGlobales.ObjectifIndex++;
+
+                // Définit isFirstInteraction à false pour les interactions suivantes
+                isFirstInteraction = false;
+            }
+
+            // Charge la nouvelle scène
+            SceneManager.LoadScene(sceneName);
+        }
     }
-
-}
 
     public Vector3 GetPlayerPosition()
     {

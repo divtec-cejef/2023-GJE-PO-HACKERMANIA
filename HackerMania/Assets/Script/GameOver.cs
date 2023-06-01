@@ -7,8 +7,7 @@ public class GameOver : MonoBehaviour
     public Canvas gameOverCanvas;
     public PlayerMovement playerMovement;
     public DialogueTrigger dialogueTrigger;
-    public CameraZoom cameraZoom;
-    public InvisibleTrigger invisibleTrigger;
+
 
     private void Start()
     {
@@ -23,8 +22,6 @@ public class GameOver : MonoBehaviour
             gameOverCanvas.gameObject.SetActive(true);
             playerMovement.enabled = false; // Désactiver le script de mouvement du joueur
             dialogueTrigger.enabled = false; // Désactive le script d'interaction avec un objet
-            cameraZoom.enabled = false; // Désactive le script de zoom de la caméra principale
-            invisibleTrigger.enabled = false; // Désactive le script des dialogues invisibles
         }
     }
 }
