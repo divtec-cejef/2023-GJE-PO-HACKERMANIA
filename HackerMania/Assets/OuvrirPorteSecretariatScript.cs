@@ -15,6 +15,6 @@ public class OuvrirPorteSecretariatScript : MonoBehaviour
 
     public void SetVariableTrue()
     {
-        VariablesGlobales.DoorSecretariatIsOpen = true; // Permet au booléen contrôlant la porte de se set à 'true'.
+        VariablesGlobales.DoorSecretariatIsOpen = true; // Permet au boolÃ©en contrÃ´lant la porte de se set Ã  'true'.
     }
 }

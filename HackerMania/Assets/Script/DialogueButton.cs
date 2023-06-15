@@ -7,7 +7,7 @@ public class DialogueButton : MonoBehaviour
     public GameObject dialogueBox;
     public string texte = "";
     public TMP_Text dialogueText;
-    public PlayerMovement playerMovement; // Référence au script de mouvement du joueur
+
 
     private bool isDialogueActive = false;
 
@@ -33,7 +33,6 @@ public class DialogueButton : MonoBehaviour
         isDialogueActive = true;
         dialogueBox.SetActive(true);
         dialogueText.text = texte;
-        playerMovement.enabled = false; // Désactive le script de mouvement du joueur
         Debug.Log("Dialogue lancé");
     }
 
@@ -41,7 +40,6 @@ public class DialogueButton : MonoBehaviour
     {
         isDialogueActive = false;
         dialogueBox.SetActive(false); // Désactive la boîte de dialogue lorsque la touche "Enter" ou "E" est enfoncée
-        playerMovement.enabled = true; // Réactive le script de mouvement du joueur
         Debug.Log("Dialogue terminé");
     }
 }

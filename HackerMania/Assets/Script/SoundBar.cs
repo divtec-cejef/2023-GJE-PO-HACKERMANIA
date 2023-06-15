@@ -12,7 +12,7 @@ public class SoundBar : MonoBehaviour
 
     private PlayerMovement playerMovement;
     private Transform playerTransform;
-    public float proximityDistance = 2.0f; // Distance de proximité pour la diminution de la vie
+    public float proximityDistance = 2.0f; // Distance de proximitÃ© pour la diminution de la vie
 
     void Start()
     {
@@ -37,7 +37,7 @@ public class SoundBar : MonoBehaviour
         {
             health += healthDecreaseRate;
         }
-        health = Mathf.Clamp(health, 0f, maxHealth); // Limiter la santé entre 0 et maxHealth
+        health = Mathf.Clamp(health, 0f, maxHealth); // Limiter la santÃ© entre 0 et maxHealth
         UpdateHealthBar();
     }
 

@@ -19,16 +19,15 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
     }
-
     void FixedUpdate()
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        // Vérifier si le joystick gauche est utilisé pour déplacer le joueur
+        // VÃ©rifier si le joystick gauche est utilisÃ© pour dÃ©placer le joueur
         if (Mathf.Abs(horizontal) > 0.1f || Mathf.Abs(vertical) > 0.1f)
         {
-            // Vérifier si le bouton A est enfoncé pour augmenter la vitesse
+            // VÃ©rifier si le bouton A est enfoncÃ© pour augmenter la vitesse
             if (Input.GetKey(KeyCode.JoystickButton2) || Input.GetKey(KeyCode.LeftShift))
             {
                 rb.MovePosition(rb.position + new Vector2(horizontal, vertical) * boostSpeed * Time.fixedDeltaTime);
@@ -45,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
             isRunning = false;
         }
 
-        // Mettre à jour l'animation en fonction de la direction de déplacement
+        // Mettre Ã  jour l'animation en fonction de la direction de dÃ©placement
         if (vertical < 0 && Mathf.Abs(horizontal) < 0.1f)
         {
             animator.Play(animations.DownAnimation);

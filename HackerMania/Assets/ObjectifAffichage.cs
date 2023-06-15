@@ -4,50 +4,50 @@ using TMPro;
 
 public class ObjectifAffichage : MonoBehaviour
 {
-    public TMP_Text texteObjectif; // RÈfÈrence ‡ l'objet Text
-    private int previousObjectifIndex; // Valeur prÈcÈdente de ObjectifIndex
+    public TMP_Text texteObjectif; // R√©f√©rence √† l'objet Text
+    private int previousObjectifIndex; // Valeur pr√©c√©dente de ObjectifIndex
 
     void Start()
     {
-        // Mettre ‡ jour le texte initial
+        // Mettre √† jour le texte initial
         UpdateText();
 
-        // Assigner la valeur initiale de ObjectifIndex ‡ previousObjectifIndex
+        // Assigner la valeur initiale de ObjectifIndex √† previousObjectifIndex
         previousObjectifIndex = VariablesGlobales.ObjectifIndex;
     }
 
     void Update()
     {
-        // VÈrifier si ObjectifIndex est supÈrieur ‡ la valeur prÈcÈdente
+        // V√©rifier si ObjectifIndex est sup√©rieur √† la valeur pr√©c√©dente
         if (VariablesGlobales.ObjectifIndex > previousObjectifIndex)
         {
-            // Mettre ‡ jour la valeur prÈcÈdente avec la nouvelle valeur de ObjectifIndex
+            // Mettre √† jour la valeur pr√©c√©dente avec la nouvelle valeur de ObjectifIndex
             previousObjectifIndex = VariablesGlobales.ObjectifIndex;
 
-            // Mettre ‡ jour le texte avec le nouvel objectif
+            // Mettre √† jour le texte avec le nouvel objectif
             UpdateText();
         }
     }
 
     void UpdateText()
     {
-        // VÈrifier si l'objet Text est assignÈ
+        // V√©rifier si l'objet Text est assign√©
         if (texteObjectif == null)
         {
-            Debug.LogWarning("L'objet Text n'est pas assignÈ !");
+            Debug.LogWarning("L'objet Text n'est pas assign√© !");
             return;
         }
 
-        // RÈcupÈrer l'objectif actuel en fonction de la variable ObjectifIndex
+        // R√©cup√©rer l'objectif actuel en fonction de la variable ObjectifIndex
         string objectifTexte = GetObjectifActuel(VariablesGlobales.ObjectifIndex);
 
-        // Mettre ‡ jour le texte avec le nouvel objectif
+        // Mettre √† jour le texte avec le nouvel objectif
         texteObjectif.text = objectifTexte;
     }
 
     string GetObjectifActuel(int index)
     {
-        // DÈfinir les objectifs en fonction de leur index
+        // D√©finir les objectifs en fonction de leur index
         switch (index)
         {
             case 1:
@@ -57,7 +57,9 @@ public class ObjectifAffichage : MonoBehaviour
             case 3:
                 return "Objectif 3 : Trouver un moyen d'ouvrir la porte";
             case 4:
-                return "Objectif 4 : Se rendre dans la salle suivante";
+                return "Objectif 4 : Quitter le secr√©tariat";
+            case 5:
+                return "Objectif 5 : Se rendre dans la salle des machines";
             default:
                 return "Objectif inconnu";
         }

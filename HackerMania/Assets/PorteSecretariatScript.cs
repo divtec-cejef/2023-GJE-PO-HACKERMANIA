@@ -4,17 +4,32 @@ using UnityEngine;
 
 public class PorteSecretariatScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public BoxCollider2D wallCollider; // Référence au composant BoxCollider du mur invisible
+    public Sprite spritePorteOuverte;
+    public SpriteRenderer spriteRenderer;
+
+    // Start est appelé avant la première frame
     void Start()
     {
-        
+        if (spriteRenderer == null)
+        {
+            spriteRenderer = GetComponent<SpriteRenderer>();
+        }
+        wallCollider.enabled = true;
     }
 
-    // Update is called once per frame
+    // Update est appelé une fois par frame
     void Update()
     {
-        if (VariablesGlobales.DoorSecretariatIsOpen == true) {
+        if (VariablesGlobales.DoorSecretariatIsOpen == true)
+        {
             Debug.Log("La porte est ouverte !");
+            wallCollider.enabled = false; // Activer le collider du mur invisible
+            spriteRenderer.sprite = spritePorteOuverte;
+        }
+        else
+        {
+            wallCollider.enabled = true; // Désactiver le collider du mur invisible
         }
     }
 }
