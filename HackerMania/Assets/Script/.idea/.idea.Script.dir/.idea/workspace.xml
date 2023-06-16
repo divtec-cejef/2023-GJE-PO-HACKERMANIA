@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d1d9af98-47ce-4161-a449-b100d9840c15" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../MainGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../MainGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ObjectifAffichage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ObjectifAffichage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OuvrirPorteSecretariatScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../OuvrirPorteSecretariatScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PorteSecretariatScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../PorteSecretariatScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Screen.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Screen.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DialogueButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DialogueButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameOver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameOver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReturnButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ReturnButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SceneChangementInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SceneChangementInteraction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Script Globale/GlobalVariables.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Script Globale/GlobalVariables.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SoundBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SoundBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Animation/DownHackerMovement.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Animation/DownHackerMovement.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Animation/Hacker.controller" beforeDir="false" afterPath="$PROJECT_DIR$/../Sprite/Animation/Hacker.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Down/MicrosoftTeams-image (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Down/MicrosoftTeams-image (1).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Down/MicrosoftTeams-image (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Down/MicrosoftTeams-image (2).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Down/MicrosoftTeams-image (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Down/MicrosoftTeams-image (3).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Down/MicrosoftTeams-image (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Down/MicrosoftTeams-image (4).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Down/MicrosoftTeams-image (5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Down/MicrosoftTeams-image (5).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Idle/IdleHackerAnimation.anim" beforeDir="false" afterPath="$PROJECT_DIR$/../Sprite/Hacker Idle/IdleHackerAnimation.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Idle/MicrosoftTeams-image (10).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Idle/MicrosoftTeams-image (10).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Idle/MicrosoftTeams-image (11).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Idle/MicrosoftTeams-image (11).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Idle/MicrosoftTeams-image (12).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Idle/MicrosoftTeams-image (12).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Idle/MicrosoftTeams-image (13).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Idle/MicrosoftTeams-image (13).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Idle/MicrosoftTeams-image (9).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Idle/MicrosoftTeams-image (9).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../AutomatiqueDialogue.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../ObjectifAffichage.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../OuvrirPorteSecretariatScript.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../PorteSecretariatScript.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DisableScriptOnTrigger.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PasswordController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReturnButton.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SceneChangementInteraction.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Script Globale/GlobalVariables.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="2Qe89keA5ooAGHNIEhFFqFjmkYe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Dev\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Dev\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Dev\\AppData\\Local\\Symbols\\src&quot;
+    ]
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1d9af98-47ce-4161-a449-b100d9840c15" name="Changes" comment="" />
+      <created>1685702540118</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685702540118</updated>
+      <workItem from="1685702542206" duration="5859000" />
+      <workItem from="1686551155610" duration="13144000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
