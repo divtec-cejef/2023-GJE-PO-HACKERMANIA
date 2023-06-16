@@ -14,8 +14,8 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/HackerMania-PC2.unity
     guid: a078ae2adf8b69a4485094b49bdef031
-  - enabled: 0
-    path: Assets/Screen.unity
+  - enabled: 1
+    path: Assets/StoryExplainScene.unity
     guid: a4a9986b2ab5c244b85d76d4bdfe044e
   - enabled: 1
     path: Assets/MainGame.unity

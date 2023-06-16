@@ -8,26 +8,30 @@ public class SceneChangementInteraction : MonoBehaviour
     public float maxDistance = 2.0f;
     public string sceneName;
     public PlayerMovement playerMovement;
+    private static bool isFirstInteraction = true;
 
-    public Vector3 playerPosition;
-
-   private void Update()
-{
-    if (Vector2.Distance(transform.position, playerMovement.transform.position) <= maxDistance 
-        && Input.GetKeyDown(KeyCode.Return))
+    private void Update()
     {
-        // Enregistre la position actuelle du joueur
-        playerPosition = playerMovement.transform.position;
+        if (Vector2.Distance(transform.position, playerMovement.transform.position) <= maxDistance 
+            && Input.GetKeyDown(KeyCode.JoystickButton0))
+        {
+            VariablesGlobales.PlayerPosition = transform.position;
 
-        // Charge la nouvelle sc�ne
-        SceneManager.LoadScene(sceneName);
-    }
+            // Vérifie si c'est la première interaction
+            if (isFirstInteraction)
+            {
+                // Ajoute 1 à ObjectifIndex
+                VariablesGlobales.ObjectifIndex++;
+                
+                // Définit isFirstInteraction à false pour les interactions suivantes
+                isFirstInteraction = false;
+            }
 
-}
+            // Enregistre la référence au script PlayerMovement
+            VariablesGlobales.PlayerMovementInstance = playerMovement;
 
-    public Vector3 GetPlayerPosition()
-    {
-        // Renvoie la position du joueur enregistr�e lors de la derni�re interaction
-        return playerPosition;
+            // Charge la nouvelle scène
+            SceneManager.LoadScene(sceneName);
+        }
     }
 }
