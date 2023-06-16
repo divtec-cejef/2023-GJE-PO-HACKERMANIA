@@ -24,7 +24,7 @@ public class TextBoxManage : MonoBehaviour
             isDialogueActive = true;
             CanvasTextBox.SetActive(true);
             DialogueText.text = Texte;
-            Debug.Log("Dialogue lancé");
+            Debug.Log("Dialogue lancÃ©");
         }
     }
 
@@ -33,9 +33,9 @@ public class TextBoxManage : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.JoystickButton0) && isDialogueActive)
         {
-            CanvasTextBox.SetActive(false); // désactive la boîte de dialogue lorsque la touche "Enter" est enfoncée
+            CanvasTextBox.SetActive(false); // dÃ©sactive la boÃ®te de dialogue lorsque la touche "Enter" est enfoncÃ©e
             isDialogueActive = false;
-            Debug.Log("Dialogue terminé");
+            Debug.Log("Dialogue terminÃ©");
         }
     }
 }

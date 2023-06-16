@@ -13,7 +13,7 @@ public class DialogueButton : MonoBehaviour
 
     void Start()
     {
-        dialogueBox.SetActive(false); // Désactive la boîte de dialogue au démarrage de la scène
+        dialogueBox.SetActive(false); // DÃ©sactive la boÃ®te de dialogue au dÃ©marrage de la scÃ¨ne
     }
 
     public void OnClickButton()
@@ -33,13 +33,13 @@ public class DialogueButton : MonoBehaviour
         isDialogueActive = true;
         dialogueBox.SetActive(true);
         dialogueText.text = texte;
-        Debug.Log("Dialogue lancé");
+        Debug.Log("Dialogue lancÃ©");
     }
 
     public void EndDialogue()
     {
         isDialogueActive = false;
-        dialogueBox.SetActive(false); // Désactive la boîte de dialogue lorsque la touche "Enter" ou "E" est enfoncée
-        Debug.Log("Dialogue terminé");
+        dialogueBox.SetActive(false); // DÃ©sactive la boÃ®te de dialogue lorsque la touche "Enter" ou "E" est enfoncÃ©e
+        Debug.Log("Dialogue terminÃ©");
     }
 }

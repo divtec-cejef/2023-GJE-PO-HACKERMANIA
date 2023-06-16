@@ -3,17 +3,18 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections;
 
-public class DialogueTrigger : MonoBehaviour
+public class MultipleDialogueTrigger : MonoBehaviour
 {
     public GameObject dialogueBox;
-    public string texte = "";
+    public string[] dialogues;
     public TMP_Text dialogueText;
     public PlayerMovement playerMovement;
     public float maxDistance = 2.0f;
     public float dialogueCaractereTime = 0.04f;
 
     private bool isDialogueActive = false;
-    private bool isDialogueInProgress = false; // Added flag to check if dialogue is already in progress
+    private bool isDialogueInProgress = false;
+    private int currentDialogueIndex = 0;
 
     void Start()
     {
@@ -35,23 +36,30 @@ public class DialogueTrigger : MonoBehaviour
 
     private IEnumerator StartDialogue()
     {
-        isDialogueInProgress = true; // Set the flag to true when dialogue starts
+        isDialogueInProgress = true;
         isDialogueActive = true;
         dialogueBox.SetActive(true);
         playerMovement.enabled = false;
         Debug.Log("Dialogue lancé");
 
         dialogueText.text = string.Empty;
+        string currentDialogue = dialogues[currentDialogueIndex];
 
-        for (int i = 0; i < texte.Length; i++)
+        for (int i = 0; i < currentDialogue.Length; i++)
         {
-            dialogueText.text += texte[i];
+            dialogueText.text += currentDialogue[i];
             yield return new WaitForSeconds(dialogueCaractereTime);
         }
 
         yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.JoystickButton0) || Input.GetKeyDown(KeyCode.E));
         EndDialogue();
-        isDialogueInProgress = false; // Reset the flag when dialogue ends
+        isDialogueInProgress = false;
+
+        currentDialogueIndex++;
+        if (currentDialogueIndex >= dialogues.Length)
+        {
+            currentDialogueIndex = 0;
+        }
     }
 
     private void EndDialogue()
@@ -63,3 +71,4 @@ public class DialogueTrigger : MonoBehaviour
         Debug.Log("Dialogue terminé");
     }
 }
+
