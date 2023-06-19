@@ -8,7 +8,7 @@ public class InteractDialogueTrigger : MonoBehaviour
 
     private void Start()
     {
-        // Récupérer le nom de la scène actuelle
+        // RÃ©cupÃ©rer le nom de la scÃ¨ne actuelle
         previousSceneName = SceneManager.GetActiveScene().name;
     }
 
@@ -16,7 +16,7 @@ public class InteractDialogueTrigger : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            // Charger la scène spécifiée
+            // Charger la scÃ¨ne spÃ©cifiÃ©e
             SceneManager.LoadScene(sceneName);
         }
     }

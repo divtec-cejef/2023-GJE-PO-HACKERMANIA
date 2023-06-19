@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1d9af98-47ce-4161-a449-b100d9840c15" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/GridPositionner.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MainGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../MainGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Palette/Tilesheet_floor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Palette/Tilesheet_floor.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Script.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Script.dir/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d1d9af98-47ce-4161-a449-b100d9840c15" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +61,7 @@
       <updated>1685702540118</updated>
       <workItem from="1685702542206" duration="5859000" />
       <workItem from="1686551155610" duration="13144000" />
-      <workItem from="1686901450464" duration="3069000" />
+      <workItem from="1686901450464" duration="3625000" />
     </task>
     <servers />
   </component>

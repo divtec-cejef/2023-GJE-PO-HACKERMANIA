@@ -1,13 +1,16 @@
 using UnityEngine;
 
-public class Garde : MonoBehaviour
+public class GuardianMovement : MonoBehaviour
 {
     public Transform[] waypoints = new Transform[4];  // Tableau contenant les waypoints à suivre
     private int currentWaypointIndex;  // Indice du waypoint actuel
     private Transform currentWaypoint;  // Waypoint actuel
     public float moveSpeed = 3f;  // Vitesse de déplacement du garde
     public GameObject triangleCollider;  // Référence au collider du triangle
-
+    public GameObject player;
+    public Canvas gameOverCanvas;
+    public PlayerMovement playerMovement;
+    
     private void Start()
     {
         if (waypoints.Length > 0)
@@ -44,8 +47,8 @@ public class Garde : MonoBehaviour
 
     private void ShowGameOverScreen()
     {
-        // Affiche l'écran Game Over (vous pouvez implémenter cela selon votre système d'interface utilisateur)
         Debug.Log("Game Over");
-        // Par exemple, vous pouvez désactiver les scripts de contrôle du joueur, afficher un écran de Game Over, etc.
+        gameOverCanvas.gameObject.SetActive(true);
+        playerMovement.enabled = false; // Désactiver le script de mouvement du joueur
     }
 }
