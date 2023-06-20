@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9e9a52a-087b-45cb-970f-2ba2a728b606" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Assets.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Assets.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GuardianMovement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GuardianMovement.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/MainGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Script/.idea/.idea.Script.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Script/.idea/.idea.Script.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Script/GameOver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Script/GameOver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Script/InteractDialogueTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Script/InteractDialogueTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Script/SceneChangementInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Script/SceneChangementInteraction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Script/SoundBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Script/SoundBar.cs" afterDir="false" />
-    </list>
+    <list default="true" id="c9e9a52a-087b-45cb-970f-2ba2a728b606" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +58,7 @@
       <updated>1685713168819</updated>
       <workItem from="1685713170762" duration="2828000" />
       <workItem from="1686808411788" duration="4235000" />
-      <workItem from="1687182240123" duration="5879000" />
+      <workItem from="1687182240123" duration="6089000" />
     </task>
     <servers />
   </component>
