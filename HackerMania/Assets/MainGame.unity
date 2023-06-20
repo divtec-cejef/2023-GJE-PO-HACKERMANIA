@@ -1905,6 +1905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 272d613e12876794e910bf703610cf40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  optionsCanvas: {fileID: 391039771}
 --- !u!114 &391039773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1918,7 +1919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventSystem: {fileID: 2261694}
-  firstButton: {fileID: 0}
+  firstButton: {fileID: 2027702874}
 --- !u!114 &391039774
 MonoBehaviour:
   m_ObjectHideFlags: 0
