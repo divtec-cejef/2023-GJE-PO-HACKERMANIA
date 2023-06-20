@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1d9af98-47ce-4161-a449-b100d9840c15" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/.idea.Assets.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.idea.Assets.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AutomatiqueDialogue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../AutomatiqueDialogue.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LoginScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../LoginScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MainGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../MainGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ObjectifAffichage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ObjectifAffichage.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Scenes/ComputerViewScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/ComputerViewScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Script.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Script.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CameraZoom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CameraZoom.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Square.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Square.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StoryExplainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../StoryExplainScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +71,7 @@
       <workItem from="1686551155610" duration="13144000" />
       <workItem from="1686901450464" duration="3625000" />
       <workItem from="1687241368901" duration="1653000" />
-      <workItem from="1687243141408" duration="2735000" />
+      <workItem from="1687243141408" duration="5706000" />
     </task>
     <servers />
   </component>
