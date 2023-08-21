@@ -33,7 +33,7 @@ public class DialogueTrigger : MonoBehaviour
         }
     }
 
-    private IEnumerator StartDialogue()
+    public IEnumerator StartDialogue()
     {
         isDialogueInProgress = true;
         isDialogueActive = true;
@@ -54,7 +54,7 @@ public class DialogueTrigger : MonoBehaviour
         isDialogueInProgress = false; // Reset the flag when dialogue ends
     }
 
-    private void EndDialogue()
+    public void EndDialogue()
     {
         isDialogueActive = false;
         dialogueBox.SetActive(false);
