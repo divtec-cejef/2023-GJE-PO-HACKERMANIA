@@ -30,8 +30,8 @@ public class SceneChangementInteraction : MonoBehaviour
             // Enregistre la référence au script PlayerMovement
             VariablesGlobales.PlayerMovementInstance = playerMovement;
 
-            // Charge la nouvelle scène de manière additive
-            SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+            // Charge la nouvelle scène
+            SceneManager.LoadScene(sceneName);
         }
     }
 }

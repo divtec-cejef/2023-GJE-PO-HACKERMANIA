@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1d9af98-47ce-4161-a449-b100d9840c15" name="Changes" comment="" />
+    <list default="true" id="d1d9af98-47ce-4161-a449-b100d9840c15" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../LoginScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../LoginScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Script.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Script.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SceneChangementInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SceneChangementInteraction.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +71,7 @@
       <workItem from="1687241368901" duration="1653000" />
       <workItem from="1687243141408" duration="5706000" />
       <workItem from="1687269587830" duration="702000" />
+      <workItem from="1692602858922" duration="602000" />
     </task>
     <servers />
   </component>
