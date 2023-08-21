@@ -35,7 +35,7 @@ public class DialogueTrigger : MonoBehaviour
 
     private IEnumerator StartDialogue()
     {
-        isDialogueInProgress = true; // Set the flag to true when dialogue starts
+        isDialogueInProgress = true;
         isDialogueActive = true;
         dialogueBox.SetActive(true);
         playerMovement.enabled = false;

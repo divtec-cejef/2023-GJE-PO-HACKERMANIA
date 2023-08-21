@@ -7,7 +7,7 @@ public class GameOver : MonoBehaviour
     public Canvas gameOverCanvas;
     public PlayerMovement playerMovement;
     public DialogueTrigger dialogueTrigger;
-	public Canvas listeObjectifs;
+    public Canvas listeObjectifs;
 
     private void Start()
     {
@@ -22,7 +22,7 @@ public class GameOver : MonoBehaviour
             gameOverCanvas.gameObject.SetActive(true);
             playerMovement.enabled = false; // Désactiver le script de mouvement du joueur
             dialogueTrigger.enabled = false; // Désactive le script d'interaction avec un objet
-			listeObjectifs.gameObject.SetActive(false);
+            listeObjectifs.gameObject.SetActive(false);
         }
     }
 }

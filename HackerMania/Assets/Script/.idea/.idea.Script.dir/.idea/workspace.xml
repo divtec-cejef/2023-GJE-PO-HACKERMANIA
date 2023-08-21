@@ -5,45 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1d9af98-47ce-4161-a449-b100d9840c15" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../MainGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../MainGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ObjectifAffichage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ObjectifAffichage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OuvrirPorteSecretariatScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../OuvrirPorteSecretariatScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PorteSecretariatScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../PorteSecretariatScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Screen.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Screen.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DialogueButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DialogueButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameOver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameOver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReturnButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ReturnButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoginScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../LoginScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Script.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Script.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SceneChangementInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SceneChangementInteraction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Script Globale/GlobalVariables.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Script Globale/GlobalVariables.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SoundBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SoundBar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Animation/DownHackerMovement.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Animation/DownHackerMovement.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Animation/Hacker.controller" beforeDir="false" afterPath="$PROJECT_DIR$/../Sprite/Animation/Hacker.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Down/MicrosoftTeams-image (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Down/MicrosoftTeams-image (1).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Down/MicrosoftTeams-image (2).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Down/MicrosoftTeams-image (2).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Down/MicrosoftTeams-image (3).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Down/MicrosoftTeams-image (3).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Down/MicrosoftTeams-image (4).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Down/MicrosoftTeams-image (4).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Down/MicrosoftTeams-image (5).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Down/MicrosoftTeams-image (5).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Idle/IdleHackerAnimation.anim" beforeDir="false" afterPath="$PROJECT_DIR$/../Sprite/Hacker Idle/IdleHackerAnimation.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Idle/MicrosoftTeams-image (10).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Idle/MicrosoftTeams-image (10).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Idle/MicrosoftTeams-image (11).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Idle/MicrosoftTeams-image (11).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Idle/MicrosoftTeams-image (12).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Idle/MicrosoftTeams-image (12).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Idle/MicrosoftTeams-image (13).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Idle/MicrosoftTeams-image (13).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Idle/MicrosoftTeams-image (9).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprite/Hacker Idle/MicrosoftTeams-image (9).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,10 +15,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../AutomatiqueDialogue.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../AutomatiqueDialogue.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../ObjectifAffichage.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../OptionsMenu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../OuvrirPorteSecretariatScript.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../PlayerPositionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../PorteSecretariatScript.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CameraZoom.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DisableScriptOnTrigger.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PasswordController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
@@ -63,12 +30,16 @@
     <setting file="file://$PROJECT_DIR$/Script Globale/GlobalVariables.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2Qe89keA5ooAGHNIEhFFqFjmkYe" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
@@ -96,6 +67,11 @@
       <updated>1685702540118</updated>
       <workItem from="1685702542206" duration="5859000" />
       <workItem from="1686551155610" duration="13144000" />
+      <workItem from="1686901450464" duration="3625000" />
+      <workItem from="1687241368901" duration="1653000" />
+      <workItem from="1687243141408" duration="5706000" />
+      <workItem from="1687269587830" duration="702000" />
+      <workItem from="1692602858922" duration="602000" />
     </task>
     <servers />
   </component>
@@ -103,6 +79,7 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>

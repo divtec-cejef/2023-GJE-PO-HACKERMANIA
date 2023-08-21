@@ -57,9 +57,9 @@ public class ObjectifAffichage : MonoBehaviour
             case 3:
                 return "Objectif 3 : Trouver un moyen d'ouvrir la porte";
             case 4:
-                return "Objectif 4 : Quitter le secrétariat";
+                return "Objectif 4 : Visiter la salle des machines";
             case 5:
-                return "Objectif 5 : Se rendre dans la salle des machines";
+                return "Objectif 5 : ";
             default:
                 return "Objectif inconnu";
         }
