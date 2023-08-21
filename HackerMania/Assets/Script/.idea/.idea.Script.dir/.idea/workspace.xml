@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1d9af98-47ce-4161-a449-b100d9840c15" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../AutomatiqueDialogue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../AutomatiqueDialogue.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LoginScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../LoginScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MainGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../MainGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ObjectifAffichage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ObjectifAffichage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scenes/ComputerViewScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/ComputerViewScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Script.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Script.dir/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d1d9af98-47ce-4161-a449-b100d9840c15" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +13,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../AutomatiqueDialogue.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../ObjectifAffichage.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../OptionsMenu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../OuvrirPorteSecretariatScript.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../PlayerPositionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../PorteSecretariatScript.cs" root0="SKIP_HIGHLIGHTING" />
@@ -72,6 +66,7 @@
       <workItem from="1686901450464" duration="3625000" />
       <workItem from="1687241368901" duration="1653000" />
       <workItem from="1687243141408" duration="5706000" />
+      <workItem from="1687269587830" duration="702000" />
     </task>
     <servers />
   </component>
