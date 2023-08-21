@@ -2,15 +2,17 @@ using UnityEngine;
 
 public class GuardianMovement : MonoBehaviour
 {
-    public Transform[] waypoints = new Transform[4];  // Tableau contenant les waypoints à suivre
-    private int currentWaypointIndex;  // Indice du waypoint actuel
-    private Transform currentWaypoint;  // Waypoint actuel
-    public float moveSpeed = 3f;  // Vitesse de déplacement du garde
-    public GameObject triangleCollider;  // Référence au collider du triangle
+    public Transform[] waypoints = new Transform[4];
+    private int currentWaypointIndex;
+    private Transform currentWaypoint;
+    public float moveSpeed = 3f;
+    public GameObject triangleCollider;
     public GameObject player;
     public Canvas gameOverCanvas;
     public PlayerMovement playerMovement;
     
+    private bool hasTurned = false; // Pour suivre si le gardien a effectué un quart de tour
+
     private void Start()
     {
         if (waypoints.Length > 0)
@@ -26,21 +28,28 @@ public class GuardianMovement : MonoBehaviour
 
     private void Update()
     {
-        // Vérifie si le garde a atteint le waypoint actuel
         if (Vector3.Distance(transform.position, currentWaypoint.position) < 0.1f)
         {
-            // Passe au prochain waypoint
+            if (!hasTurned)
+            {
+                Debug.Log("Le gardien se tourne");
+                hasTurned = true;
+                // Effectue un quart de tour vers la droite (2D)
+                transform.rotation *= Quaternion.Euler(0f, 0f, -90f);
+            }
+
             currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Length;
             currentWaypoint = waypoints[currentWaypointIndex];
         }
+        else
+        {
+            hasTurned = false; // Réinitialise hasTurned lorsqu'il n'est pas sur un waypoint
+        }
 
-        // Déplace le garde vers le waypoint actuel
         transform.position = Vector3.MoveTowards(transform.position, currentWaypoint.position, moveSpeed * Time.deltaTime);
 
-        // Vérifie si le joueur entre en collision avec le triangle
         if (triangleCollider != null && triangleCollider.GetComponent<Collider>().bounds.Contains(player.transform.position))
         {
-            // Affiche l'écran Game Over
             ShowGameOverScreen();
         }
     }
@@ -49,6 +58,6 @@ public class GuardianMovement : MonoBehaviour
     {
         Debug.Log("Game Over");
         gameOverCanvas.gameObject.SetActive(true);
-        playerMovement.enabled = false; // Désactiver le script de mouvement du joueur
+        playerMovement.enabled = false;
     }
 }
