@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class AutomatiqueDialogue : MonoBehaviour
 {
@@ -9,21 +10,23 @@ public class AutomatiqueDialogue : MonoBehaviour
     public TMP_Text dialogueText;
     public float maxDistance = 2.0f;
     public float dialogueCharacterTime = 0.04f;
+    public string mainGameSceneName = "MainGame";
 
     private bool isDialogueActive = false;
     private int dialogueIndex = 0;
 
     // Ajoutez vos lignes de dialogue ici
     private string[] dialogues = {
-        "Allo...",
-        "Est-ce que tu me recoit ?",
-        "Parfait, je te refais le pitch de la mission.",
-        "Tu es ici pour t'introduir dans cette entreprise.",
-        "Certaines sources pretendent que cette entreprise cache l'énorme pollution provoqué par leurs véhicules.",
-        "Il faut que tu arrives a atteindre le servuer pour obtenir le fichier compromettant et que tu me le rapportes.",
-        "Quand tu entreras, tu arriveras au secrétariat la première étape de ta mission.",
-        "Mais attention, il parait qu'un garde est endormi de l'autre cote de la piece, alors attention.",
-        "Ne cours surtout pas, il ne faut pas l'alerter.",
+        "Allo...allo?",
+        "Est-ce que tu me recois ?",
+        "Parfait, alors je te brife sur ta mission.",
+        "Tu es ici pour t'introduire dans cette entreprise automobile.",
+        "J'ai ete employe il y a peu de temps... 1 mois enfaite, donc ma carte d'acces n'a pas encore ete desactive.",
+        "J'ai decouvert que cette entreprise cache l'enorme pollution provoqué par leurs vehicules.",
+        "Il faut que tu arrives a atteindre le serveur pour obtenir le fichier compromettant et que tu me le rapportes.",
+        "Quand tu entreras, tu arriveras au secretariat, la premiere etape de ta mission.",
+        "Attention, il parait qu'un garde est endormi de l'autre cote de la piece, alors attention.",
+        "Ne cours surtout pas, il ne faut pas l'alerter",
         "Allez, bonne chance !" 
     };
 
@@ -45,6 +48,7 @@ public class AutomatiqueDialogue : MonoBehaviour
             else
             {
                 EndDialogue();
+                LoadMainGameScene();
             }
         }
     }
@@ -78,5 +82,10 @@ public class AutomatiqueDialogue : MonoBehaviour
         dialogueBox.SetActive(false);
         dialogueText.text = string.Empty;
         Debug.Log("Dialogue terminé");
+    }
+
+    private void LoadMainGameScene()
+    {
+        SceneManager.LoadScene(mainGameSceneName);
     }
 }

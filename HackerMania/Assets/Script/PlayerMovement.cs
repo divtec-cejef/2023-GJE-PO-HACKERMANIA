@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
     public float normalSpeed = 5f;
     public float boostSpeed = 10f;
     public bool isRunning = false;
+    public bool estDeguiser = false;
 
     public Animator animator;
     public DirectionalAnimations animations;
