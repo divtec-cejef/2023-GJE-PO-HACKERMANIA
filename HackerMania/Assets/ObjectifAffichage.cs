@@ -57,11 +57,13 @@ public class ObjectifAffichage : MonoBehaviour
             case 3:
                 return "Objectif 3 : Trouver un moyen d'ouvrir la porte";
             case 4:
-                return "Objectif 4 : Visiter la salle des machines";
+                return "Objectif 4 : Trouver un moyen de sortir de la salle des machines";
             case 5:
-                return "Objectif 5 : ";
+                return "Objectif 5 : trouver un moyen d'aller dans la salle administateur";
+            case 6:
+                return "Objectif 6: trouver un moyen de desactiver l'alarme des serveurs";
             default:
-                return "Objectif inconnu";
+                return "Objectif inconnu : ...";
         }
     }
 }

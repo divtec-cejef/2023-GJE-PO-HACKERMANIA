@@ -6,6 +6,7 @@ public class SceneChangementInteraction : MonoBehaviour
     public float maxDistance = 2.0f;
     public PlayerMovement playerMovement;
 	public ReturnButton returnButton;
+	public static bool isFirstInteraction = true;
 
     private bool isCanvasVisible = false;
 
@@ -20,6 +21,11 @@ public class SceneChangementInteraction : MonoBehaviour
             && Input.GetKeyDown(KeyCode.JoystickButton0))
         {
             ShowCanvas();
+				if (isFirstInteraction)
+                {
+                    VariablesGlobales.ObjectifIndex++;
+                    isFirstInteraction = false;
+                }
         }
         else if (isCanvasVisible && returnButton.IsPressed == true)
         {

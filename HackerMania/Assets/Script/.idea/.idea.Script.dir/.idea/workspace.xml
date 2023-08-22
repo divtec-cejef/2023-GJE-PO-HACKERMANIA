@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1d9af98-47ce-4161-a449-b100d9840c15" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ValiderButtonScript.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ValiderButtonScript.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MainGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../MainGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ObjectifAffichage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ObjectifAffichage.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Script.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Script.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KeyInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KeyInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SceneChangementInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SceneChangementInteraction.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +79,7 @@
       <workItem from="1687243141408" duration="5706000" />
       <workItem from="1687269587830" duration="702000" />
       <workItem from="1692602858922" duration="602000" />
-      <workItem from="1692683508717" duration="2819000" />
+      <workItem from="1692683508717" duration="4759000" />
     </task>
     <servers />
   </component>
