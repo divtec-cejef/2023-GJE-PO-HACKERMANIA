@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float boostSpeed = 10f;
     public bool isRunning = false;
     public bool estDeguiser = false;
+    public GameObject canvasObject;
 
     public Animator animator;
     public DirectionalAnimations animations;
@@ -19,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        canvasObject.SetActive(false);
     }
     void FixedUpdate()
     {

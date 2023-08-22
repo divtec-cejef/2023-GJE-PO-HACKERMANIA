@@ -1,38 +1,40 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ConnectionButtonScript : MonoBehaviour
 {
     private PasswordController passwordController;
-    public string sceneName;
-    public GameObject FauxMDPTexte;
+    public PlayerMovement playerMovement;
+    public GameObject canvasObject;
+    public GameObject fauxMDPTexte;
     public static bool isFirstInteraction = true;
+    public bool isCanvasVisible = false;
 
     private void Start()
     {
         passwordController = FindObjectOfType<PasswordController>();
-        FauxMDPTexte.SetActive(false);
+        fauxMDPTexte.SetActive(false);
+        canvasObject.SetActive(false);
     }
 
     public void OnClickButton()
     {
         if (passwordController != null && passwordController.isPasswordCorrect)
         {
-            SceneManager.LoadScene(sceneName);
-            // Vérifie si c'est la première interaction
+            canvasObject.SetActive(true);
+            // VÃ©rifie si c'est la premiÃ¨re interaction
             if (isFirstInteraction)
             {
-                // Ajoute 1 à ObjectifIndex
+                // Ajoute 1 Ã  ObjectifIndex
                 VariablesGlobales.ObjectifIndex++;
 
-                // Définit isFirstInteraction à false pour les interactions suivantes
+                // DÃ©finit isFirstInteraction Ã  false pour les interactions suivantes
                 isFirstInteraction = false;
             }
-
-        } else {
-            FauxMDPTexte.SetActive(true);
+        }
+        else
+        {
+            fauxMDPTexte.SetActive(true);
         }
     }
 }

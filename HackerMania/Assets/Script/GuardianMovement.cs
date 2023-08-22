@@ -60,4 +60,12 @@ public class GuardianMovement : MonoBehaviour
         gameOverCanvas.gameObject.SetActive(true);
         playerMovement.enabled = false;
     }
+    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player") && playerMovement.estDeguiser == true)
+        {
+            Debug.Log("le deguisement fonctionne");
+        }
+    }
 }
