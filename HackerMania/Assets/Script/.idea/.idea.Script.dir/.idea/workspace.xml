@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1d9af98-47ce-4161-a449-b100d9840c15" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/SceneChangementInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SceneChangementInteraction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FakeLoading.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FakeLoading.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuardeOfficeGameOver.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuardeOfficeGameOver.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Script.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Script.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ValiderButtonScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ValiderButtonScript.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +21,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../AutomatiqueDialogue.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../DeguisementPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FakeLoading.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../GuardeOfficeGameOver.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../ObjectifAffichage.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../OptionsMenu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../OuvrirPorteSecretariatScript.cs" root0="SKIP_HIGHLIGHTING" />
@@ -33,7 +40,6 @@
     <setting file="file://$PROJECT_DIR$/SceneChangementInteraction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Script Globale/GlobalVariables.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TextBoxManage.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../ValiderButtonScript.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2Qe89keA5ooAGHNIEhFFqFjmkYe" />
   <component name="ProjectLevelVcsManager">
@@ -78,7 +84,7 @@
       <workItem from="1687243141408" duration="5706000" />
       <workItem from="1687269587830" duration="702000" />
       <workItem from="1692602858922" duration="602000" />
-      <workItem from="1692683508717" duration="5333000" />
+      <workItem from="1692683508717" duration="7425000" />
     </task>
     <servers />
   </component>
