@@ -17,7 +17,17 @@ public class SliderTextUpdater : MonoBehaviour
         if (slider != null && textMeshPro != null)
         {
             int sliderValue = Mathf.RoundToInt(slider.value * 99) + 1; // Convert 0-1 to 1-100
-            textMeshPro.text = "Chargement" + sliderValue + " %";
+            if (sliderValue == 1)
+            {
+                textMeshPro.text = ""; // telechargement non commencé.
+            } else if (sliderValue == 100)
+            {
+                textMeshPro.text = "Chargement termine"; // telechargement terminé
+            }
+            else
+            {
+               textMeshPro.text = "Chargement " + sliderValue + " %"; // telechargement en cours 
+            }
         }
     }
 

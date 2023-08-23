@@ -7,9 +7,15 @@ public class FakeLoading : MonoBehaviour
     public Slider loadingSlider;
     public float fakeLoadTime = 3.0f; // Temps de chargement simulé en secondes
 
-    private void Start()
+    private bool isLoadStarted = false;
+
+    public void StartLoading()
     {
-        StartCoroutine(SimulateLoading());
+        if (!isLoadStarted)
+        {
+            StartCoroutine(SimulateLoading());
+            isLoadStarted = true;
+        }
     }
 
     IEnumerator SimulateLoading()
