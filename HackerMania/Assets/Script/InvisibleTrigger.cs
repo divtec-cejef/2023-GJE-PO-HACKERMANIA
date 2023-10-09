@@ -10,7 +10,7 @@ public class InvisibleTrigger : MonoBehaviour
 
     private void Start()
     {
-        dialogueBox.SetActive(false); // désactive la boîte de dialogue au démarrage de la scène
+        dialogueBox.SetActive(false); // dÃ©sactive la boÃ®te de dialogue au dÃ©marrage de la scÃ¨ne
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -19,7 +19,7 @@ public class InvisibleTrigger : MonoBehaviour
         {
             dialogueBox.SetActive(true);
             dialogueText.text = Texte;
-            Debug.Log("Dialogue lancé");
+            Debug.Log("Dialogue lancÃ©");
         }
     }
 
@@ -28,7 +28,7 @@ public class InvisibleTrigger : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             dialogueBox.SetActive(false);
-            Debug.Log("Dialogue terminé");
+            Debug.Log("Dialogue terminÃ©");
         }
     }
 
@@ -36,8 +36,8 @@ public class InvisibleTrigger : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.JoystickButton0) && dialogueBox.activeSelf)
         {
-            dialogueBox.SetActive(false); // désactive la boîte de dialogue lorsque la touche "Enter" est enfoncée
-            Debug.Log("Dialogue terminé");
+            dialogueBox.SetActive(false); // dÃ©sactive la boÃ®te de dialogue lorsque la touche "Enter" est enfoncÃ©e
+            Debug.Log("Dialogue terminÃ©");
         }
     }
 }

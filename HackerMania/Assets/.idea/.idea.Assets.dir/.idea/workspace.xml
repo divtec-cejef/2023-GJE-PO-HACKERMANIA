@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9e9a52a-087b-45cb-970f-2ba2a728b606" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/MainGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/MainGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Script/DialogueButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Script/DialogueButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Script/DialogueTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Script/DialogueTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Script/TextBoxManage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Script/TextBoxManage.cs" afterDir="false" />
-    </list>
+    <list default="true" id="c9e9a52a-087b-45cb-970f-2ba2a728b606" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,11 +12,17 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/AutomatiqueDialogue.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Script/DialogueButton.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Script/DialogueDown.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Script/DialogueTrigger.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Script/MultipleDialogueTrigger.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Script/TextBoxManage.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Script/DialogueButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Script/DialogueDown.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Script/DialogueTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Script/GameOver.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Script/GuardianMovement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Script/InteractDialogueTrigger.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Script/MultipleDialogueTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Script/SceneChangementInteraction.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Script/SoundBar.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Script/TextBoxManage.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2QeThMAacO8iDUkUjAONpjopJCc" />
   <component name="ProjectViewState">
@@ -57,6 +58,7 @@
       <updated>1685713168819</updated>
       <workItem from="1685713170762" duration="2828000" />
       <workItem from="1686808411788" duration="4235000" />
+      <workItem from="1687182240123" duration="6089000" />
     </task>
     <servers />
   </component>

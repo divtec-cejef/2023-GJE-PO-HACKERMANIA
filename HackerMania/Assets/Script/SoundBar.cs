@@ -6,14 +6,18 @@ public class SoundBar : MonoBehaviour
     public float maxHealth = 1.0f;
     public float health = 1.0f;
     public float healthDecreaseRate = 0.1f;
+    public bool GuardienActif = true;
 
     public Image fillImage;
 
     private PlayerMovement playerMovement;
+    private Transform playerTransform;
+    public float proximityDistance = 2.0f; // Distance de proximité pour la diminution de la vie
 
     void Start()
     {
         playerMovement = FindObjectOfType<PlayerMovement>();
+        playerTransform = playerMovement.transform;
         health = maxHealth;
         UpdateHealthBar();
     }
@@ -24,18 +28,24 @@ public class SoundBar : MonoBehaviour
     }
 
     void DecreaseHealth()
-{
-    if (playerMovement.isRunning)
     {
-        health -= healthDecreaseRate;
+        if (playerMovement.isRunning || IsPlayerTooClose())
+        {
+            health -= healthDecreaseRate;
+        }
+        else
+        {
+            health += healthDecreaseRate;
+        }
+        health = Mathf.Clamp(health, 0f, maxHealth); // Limiter la santé entre 0 et maxHealth
+        UpdateHealthBar();
     }
-    else
+
+    bool IsPlayerTooClose()
     {
-        health += healthDecreaseRate;
+        float distance = Vector3.Distance(transform.position, playerTransform.position);
+        return distance < proximityDistance;
     }
-    health = Mathf.Clamp(health, 0f, maxHealth); // Limiter la sant� entre 0 et maxHealth
-    UpdateHealthBar();
-}
 
     void OnEnable()
     {

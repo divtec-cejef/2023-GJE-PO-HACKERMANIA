@@ -1,33 +1,50 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class SceneChangementInteraction : MonoBehaviour
 {
+    public GameObject canvasObject;
     public float maxDistance = 2.0f;
-    public string sceneName;
     public PlayerMovement playerMovement;
+	public ReturnButton returnButton;
+	public static bool isFirstInteraction = true;
 
-    public Vector3 playerPosition;
+    private bool isCanvasVisible = false;
 
-   private void Update()
-{
-    if (Vector2.Distance(transform.position, playerMovement.transform.position) <= maxDistance 
-        && Input.GetKeyDown(KeyCode.Return))
+    private void Start()
     {
-        // Enregistre la position actuelle du joueur
-        playerPosition = playerMovement.transform.position;
-
-        // Charge la nouvelle scène
-        SceneManager.LoadScene(sceneName);
+        canvasObject.SetActive(false);
     }
 
-}
-
-    public Vector3 GetPlayerPosition()
+    private void Update()
     {
-        // Renvoie la position du joueur enregistrée lors de la dernière interaction
-        return playerPosition;
+        if (!isCanvasVisible && Vector2.Distance(transform.position, playerMovement.transform.position) <= maxDistance
+            && (Input.GetKeyDown(KeyCode.JoystickButton0) || Input.GetKeyDown(KeyCode.E)))
+        {
+            ShowCanvas();
+				if (isFirstInteraction)
+                {
+                    VariablesGlobales.ObjectifIndex++;
+                    isFirstInteraction = false;
+                }
+        }
+        else if (isCanvasVisible && returnButton.IsPressed == true)
+        {
+            HideCanvas();
+        }
+    }
+
+    private void ShowCanvas()
+    {
+        canvasObject.SetActive(true);
+        isCanvasVisible = true;
+        playerMovement.enabled = false; // DÃ©sactiver le mouvement du joueur si nÃ©cessaire
+		returnButton.IsPressed = false;
+    }
+
+    private void HideCanvas()
+    {
+        canvasObject.SetActive(false);
+        isCanvasVisible = false;
+        playerMovement.enabled = true; // RÃ©activer le mouvement du joueur
     }
 }
