@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class ConnectionButtonScript : MonoBehaviour
 {
@@ -7,19 +8,19 @@ public class ConnectionButtonScript : MonoBehaviour
     public PlayerMovement playerMovement;
     public GameObject canvasObject;
     public GameObject fauxMDPTexte;
+    public TMP_InputField passwordInput;
     public static bool isFirstInteraction = true;
     public bool isCanvasVisible = false;
 
     private void Start()
     {
-        passwordController = FindObjectOfType<PasswordController>();
         fauxMDPTexte.SetActive(false);
         canvasObject.SetActive(false);
     }
 
     public void OnClickButton()
     {
-        if (passwordController != null && passwordController.isPasswordCorrect)
+        if (passwordInput.text == "VOITURE")
         {
             canvasObject.SetActive(true);
             // Vérifie si c'est la première interaction
